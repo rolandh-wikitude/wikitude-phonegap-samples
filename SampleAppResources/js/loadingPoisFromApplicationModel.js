@@ -9,7 +9,7 @@ function onLocationUpdated(position) {
 
 	// creates dummy poi-data around given lat/lon
 	for (var i=0; i< placesAmount; i++) {
-		poiData.push({ 'id': (i+1), 'longitude': longitude + 0.001 * ( 5 - getRandomInt(1,10) ), 'latitude' : latitude + 0.001 * (5 - getRandomInt(1,10)), 'description': 'This is the description of POI#'+(i+1), 'altitude' : 100.0, 'name': 'POI#'+(i+1)})
+		poiData.push({ 'id': (i+1), 'longitude': longitude + 0.01 * ( 5 - getRandomInt(1,10) ), 'latitude' : latitude + 0.01 * (5 - getRandomInt(1,10)), 'description': 'This is the description of POI#'+(i+1), 'altitude' : 100.0, 'name': 'POI#'+(i+1)})
 	}
 
 	// inject POI data in JSON-format to JS
